@@ -1,0 +1,24 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss:build": "sass scss:public/styles",
+    "scss:watch": "sass --watch scss:public/styles",
+    "server:watch": "nodemon index.js",
+    "dev": "run-p scss:watch server:watch",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
